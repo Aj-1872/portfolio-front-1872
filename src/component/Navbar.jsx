@@ -3,18 +3,19 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between w-full  text-black px-4 font-mono p-3">
+    <nav className="flex justify-around w-full bg-black text-white px-4 font-mono p-4 text-xl shadow-md">
+
       <NavLink
         to="/"
-        className={({ isActive }) => (isActive ? "text-black" : "")}
+        className={({ isActive }) => (isActive ? "text-gray-500" : "")}
       >
         <li>Home</li>
       </NavLink>
 
-      <div className=" flex space-x-5 text-gray-600 ">
+      <div className=" flex space-x-5 text-white ">
         <NavLink
           to={"/About"}
-          className={({ isActive }) => (isActive ? "text-black" : "")}
+          className={({ isActive }) => (isActive ? "text-gray-500" : "")}
         >
           <li>About</li>
         </NavLink>
@@ -22,9 +23,9 @@ const Navbar = () => {
         <div className="dropdown cursor-pointer">
           <li>Work</li>
 
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <NavLink
-              className={({ isActive }) => (isActive ? "text-black" : "")}
+              className={({ isActive }) => (isActive ? "text-gray-500" : "")}
               to={"/Work"}
             >
               hii
@@ -35,9 +36,9 @@ const Navbar = () => {
         <div className="dropdown">
           <li>Projects</li>
 
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <NavLink
-              className={({ isActive }) => (isActive ? "text-black" : "")}
+              className={({ isActive }) => (isActive ? "text-gray-500" : "")}
               to={"/Projects"}
             >
               hii2
@@ -46,7 +47,7 @@ const Navbar = () => {
         </div>
 
         <NavLink
-          className={({ isActive }) => (isActive ? "text-black" : "")}
+          className={({ isActive }) => (isActive ? "text-gray-500" : "")}
           to={"/Contact"}
         >
           <li>Contact</li>

@@ -22,7 +22,7 @@ li{
     position: absolute;
     min-width: 160px;
     background-color: #f9fafb; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 16px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     z-index: 10; /* Ensure it appears above other content */
   }
@@ -35,6 +35,7 @@ li{
     display: block;
     padding: 4px 8px; /* Padding for spacing */
     border-bottom: 1px solid #e5e7eb; /* Border for separation */
+    border-radius: 10px;
   }
 
   /* Remove the border for the last item */
