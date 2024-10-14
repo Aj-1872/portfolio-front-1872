@@ -1,0 +1,112 @@
+* {
+    cursor: default;
+    overflow: hidden;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .main-body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+  }
+
+  .background-img {
+    background-image: url("../assests/lion.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 80vw;
+    height: 80vh;
+    opacity: 70%;
+    /* filter: blur(1px); */
+  }
+
+  .logo {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+  }
+
+  .profile {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  .projects {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  .name {
+    position: absolute;
+    top: 200px;
+    font-family: "Inria Serif", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 58px;
+    color: #ffffff;
+  }
+
+  .pass {
+    position: absolute;
+    bottom: 100px;
+    font-family: "Inria Serif", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 58px;
+    color: #ffffff;
+  }
+
+  .canada {
+    position: absolute;
+    bottom: 75px;
+    font-family: "Inria Serif", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 58px;
+    color: #ffffff;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(246, 246, 246, 0.8);
+    background-color: transparent;
+    position: absolute;
+    pointer-events: none;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    transition: left 0.2s ease, top 0.2s ease , background-color 0.5s ease;;
+    
+  }
+
+  
