@@ -3,12 +3,12 @@ import "../style/Home.css";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { Outlet, Link } from "react-router-dom";
 
 const Home = () => {
 
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const circleRef = useRef(null);
-  const logoRef = useRef(null)
 
 
 
@@ -27,14 +27,16 @@ const Home = () => {
 
   const enterEffect =()=>{
     circleRef.current.style.backgroundColor = "white"
-    logoRef.current.style.color = "black"
+    
     circleRef.current.style.zIndex = '-1';
+    circleRef.current.style.height = "100px";
+    circleRef.current.style.width = "100px";
   }
   const leaveEffect =()=>{
 
     circleRef.current.style.backgroundColor = "transparent"
-    logoRef.current.style.color = "white"
-    
+    circleRef.current.style.height = "50px";
+    circleRef.current.style.width = "50px";
   }
 
 
@@ -43,6 +45,7 @@ const Home = () => {
       <div className="main-body">
 
         <div
+          
           ref={circleRef}
           className="circle"
           style={{
@@ -53,14 +56,14 @@ const Home = () => {
           }}
         ></div>
 
-        <div className="background-img"></div>
+        <div className="opacity-70" id="background-img" ></div>
 
-        <div className="logo" id="Logo" ref={logoRef} onMouseEnter={enterEffect} onMouseLeave={leaveEffect}>
+        <div className="logo" id="Logo"onMouseEnter={enterEffect} onMouseLeave={leaveEffect}>
           Aj
         </div>
 
-        <div className="profile" >PROFILE</div>
-        <div className="projects" >PROJECTS</div>
+        <div className="profile" onMouseEnter={enterEffect} onMouseLeave={leaveEffect} ><Link to="/profile">Profile</Link></div>
+        <div className="projects" onMouseEnter={enterEffect} onMouseLeave={leaveEffect} >PROJECTS</div>
         <div className="name">AJAY ODEDARA</div>
         <div className="pass">SOFTWARE DEVELOPER AND NETWORK ENGINEERING</div>
         <div className="canada">(BASED IN CANADA)</div>
