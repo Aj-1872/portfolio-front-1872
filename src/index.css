@@ -5,5 +5,36 @@
 
 /* src/index.css or src/App.css */
 
+*{
+    color: white;
+}
+
+.logoInNav {
+   
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight:600;
+    z-index: 1;
+    
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(246, 246, 246, 0.8);
+    background-color: transparent;
+    position: absolute;
+    pointer-events: none;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    transition: left 0.3s ease, top 0.3s ease , background-color 1s ease,width 1s ease, height 1s ease;
+    
+  }
+
+
+
+/* css for navbar///////////////////////////////////////////////////////////////////////// */
+
 
 
