@@ -38,3 +38,46 @@
 
 
 
+.line{
+  height: 0.05%;
+  width: 80%;
+  background: #ffffff;
+  align-items: center;
+  margin: auto;
+  
+  opacity: 30%;
+  
+}
+
+.out{
+  display: grid;
+  place-items: center; /* Center both horizontally and vertically */
+  background-color: #ffffff;
+}
+
+.line2{
+  height: 0.05%;
+  width: 80%;
+  background-color: white;
+  opacity: 0.3;
+}
+
+
+/* CenteredLine.css */
+
+
+.out {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: black;
+
+}
+
+.line {
+  height: 1px;
+  width: 80%; 
+  background-color: rgb(255, 255, 255); 
+  opacity: 0.3; 
+}
+

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./component/Home";
 import Profile from "./component/Profile";
@@ -6,6 +6,11 @@ import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 
 const App = () => {
+
+  const bgColor = "black";
+
+
+
   const circleRef = useRef(null);
 
   const enterEffect = () => {
@@ -29,11 +34,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="" element={<Home/>} />
+        <Route index path="" element={<Home bgColor={bgColor}/>} />
         <Route 
           path="profile" 
           element={
-            <Layout enterEffect={enterEffect} leaveEffect={leaveEffect} circleRef={circleRef}>
+            <Layout enterEffect={enterEffect} leaveEffect={leaveEffect} circleRef={circleRef} bgColor={bgColor}>
               <Profile path="profile" circleRef={circleRef} />
             </Layout>
           } 
@@ -43,9 +48,9 @@ const App = () => {
   );
 };
 
-const Layout = ({ children, enterEffect, leaveEffect, circleRef }) => (
+const Layout = ({ children, enterEffect, leaveEffect, circleRef , bgColor }) => (
   <>
-    <Navbar enterEffect={enterEffect} leaveEffect={leaveEffect} />
+    <Navbar enterEffect={enterEffect} leaveEffect={leaveEffect}  bgColor={bgColor} />
     <main>{children}</main>
     <Footer />
   </>

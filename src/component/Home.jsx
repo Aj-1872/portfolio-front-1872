@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({bgColor}) => {
 
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const circleRef = useRef(null);
@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="main-body">
+      <div className={`main-body bg-${bgColor}`}>
 
         <div
           

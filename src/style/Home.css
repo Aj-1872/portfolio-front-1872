@@ -5,12 +5,13 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #000000;
+    
   }
   .main-body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -19,6 +20,7 @@
     align-items: flex-end;
     color: white;
     z-index: 1;
+    
   }
 
   #background-img {
@@ -36,7 +38,7 @@
 .logo {
   position: absolute;
   top: 80px;
-  left: 100px;
+  left: 8rem;
   font-size: 35px;
   color: white;
   font-weight:600;
