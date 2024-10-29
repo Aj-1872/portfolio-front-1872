@@ -73,7 +73,22 @@ const Skill = () => {
         </div>
       ))}
 
-    
+      <div className="outer mt-14">
+        <div className="line"></div>
+      </div>
+
+      <div className="w-4/5 m-auto self-center p-14 pb-8 font-serif italic text-3xl">
+       Tools
+      </div>
+      {data.map((res, index) => (
+        <div
+          id="field"
+          className="w-4/5 m-auto self-center font-serif pl-14 "
+          key={index}
+        >
+          {res.tools}
+        </div>
+      ))}
     </>
   );
 };
