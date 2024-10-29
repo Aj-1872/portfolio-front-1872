@@ -76,7 +76,7 @@ const Profile = ({ circleRef }) => {
 
         {/* Skill and Experience components */}
         <Skill />
-        <Experience />
+        {/* <Experience /> */}
         
        
       </div>

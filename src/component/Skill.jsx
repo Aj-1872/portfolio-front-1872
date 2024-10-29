@@ -73,9 +73,7 @@ const Skill = () => {
         </div>
       ))}
 
-      <div className="outer mt-14">
-        <div className="line"></div>
-      </div>
+    
     </>
   );
 };
