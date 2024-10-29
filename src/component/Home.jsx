@@ -62,7 +62,7 @@ const Home = ({bgColor}) => {
           Aj
         </div>
 
-        <div className="profile" onMouseEnter={enterEffect} onMouseLeave={leaveEffect} ><Link to="/profile">Profile</Link></div>
+        <div className="profile" onMouseEnter={enterEffect} onMouseLeave={leaveEffect} ><Link to="/profile">PROFILE</Link></div>
         <div className="projects" onMouseEnter={enterEffect} onMouseLeave={leaveEffect} >PROJECTS</div>
         <div className="name">AJAY ODEDARA</div>
         <div className="pass">SOFTWARE DEVELOPER AND NETWORK ENGINEERING</div>

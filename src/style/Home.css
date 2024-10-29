@@ -1,115 +1,167 @@
-* {
-    cursor: default;
-    overflow: hidden;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    
-  }
-  .main-body {
-    margin: 0;
-    padding: 0;
-    
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: white;
-    z-index: 1;
-    
-  }
 
-  #background-img {
-    background-image: url("../assests/lion.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 80vw;
-    height: 80vh;
+body {
  
+  background-color: #000000;
+}
+.main-body {
+  margin: 0;
+  padding: 0;
 
-  }
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  z-index: 1;
+}
 
-  
+#background-img {
+  background-image: url("../assests/lion.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 80vw;
+  height: 80vh;
+}
+
 .logo {
   position: absolute;
   top: 80px;
   left: 8rem;
   font-size: 35px;
   color: white;
-  font-weight:600;
+  font-weight: 600;
   z-index: 1;
 }
 .logo:hover {
   color: #000000;
 }
 
+.profile {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.profile:hover {
+  color: #000000;
+}
 
-  .profile {
-    position: absolute;
-    top: 80px;
-    right: 100px;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 16px;
-    color: #ffffff;
-  }
-  .profile:hover {
-  
-    color: #000000;
-  }
+.projects {
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.projects:hover {
+  color: #000000;
+}
 
-  .projects {
-    position: absolute;
-    bottom: 80px;
-    right: 100px;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 16px;
-    color: #ffffff;
-  }
-  .projects:hover {
-    color: #000000;
-  }
+.name {
+  position: absolute;
+  top: 200px;
+  font-family: "Inria Serif", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 58px;
+  color: #ffffff;
+}
 
+.pass {
+  position: absolute;
+  bottom: 100px;
+  font-family: "Inria Serif", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 58px;
+  color: #ffffff;
+}
+
+.canada {
+  position: absolute;
+  bottom: 75px;
+  font-family: "Inria Serif", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 58px;
+  color: #ffffff;
+}
+
+/* src/styles.css */
+@media (max-width: 800px) {
   .name {
-    position: absolute;
-    top: 200px;
-    font-family: "Inria Serif", serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 90px;
-    line-height: 58px;
-    color: #ffffff;
+    font-size: 60px;
   }
 
   .pass {
-    position: absolute;
-    bottom: 100px;
-    font-family: "Inria Serif", serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 58px;
-    color: #ffffff;
+    font-size: 15px;
   }
 
   .canada {
-    position: absolute;
-    bottom: 75px;
-    font-family: "Inria Serif", serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 58px;
-    color: #ffffff;
+    font-size: 12px;
   }
-  
 
-  /* src/styles.css */
+  .profile {
+    top: 80px;
+    right: 200px;
+  }
+
+  .projects {
+    top: 80px;
+    right: 50px;
+  }
+  .logo {
+   
+    top: 58px;
+    left: 8rem;
+  
+  }
+}
+
+
+/* src/styles.css */
+@media (max-width: 500px) {
+  .name {
+    font-size: 40px;
+  }
+
+  .pass {
+    font-size: 10px;
+  }
+
+  .canada {
+    font-size: 8px;
+  }
+
+  .profile {
+    top: 80px;
+    right: 200px;
+    font-size:15px;
+  }
+
+  .projects {
+    top: 80px;
+    right: 50px;
+    font-size:15px;
+
+  }
+  .logo {
+   
+    top: 58px;
+    left: 2rem;
+  
+  }
+}

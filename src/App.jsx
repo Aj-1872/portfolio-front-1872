@@ -52,7 +52,8 @@ const Layout = ({ children, enterEffect, leaveEffect, circleRef , bgColor }) => 
   <>
     <Navbar enterEffect={enterEffect} leaveEffect={leaveEffect}  bgColor={bgColor} />
     <main>{children}</main>
-    <Footer />
+     <Footer/>
+    
   </>
 );
 

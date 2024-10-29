@@ -31,7 +31,7 @@ const Profile = ({ circleRef }) => {
         }}
       ></div>
 
-      <div className="bg-black h-screen overflow-y-auto">
+      <div  id="profile-body"  className="bg-black overflow-y-auto ">
         <div className="w-4/5 m-auto self-center p-14">
           <div className=" rounded-lg shadow-md">
             <div className="mb-4">Hi there :)</div>
@@ -78,10 +78,7 @@ const Profile = ({ circleRef }) => {
         <Skill />
         <Experience />
         
-        {/* Footer */}
-        <div className="bg-gray-800 text-white text-center py-4">
-          Footer content here
-        </div>
+       
       </div>
     </>
   );
