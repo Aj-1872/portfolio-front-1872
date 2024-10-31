@@ -11,7 +11,7 @@ const Skill = () => {
         const res = await fetch("http://localhost:3000/skill");
         const result = await res.json();
         setData(result);
-        console.log(result);
+        
       } catch (error) {
         console.error("error fetching data: ", error);
       }
