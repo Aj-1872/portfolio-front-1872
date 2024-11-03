@@ -2,85 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* src/index.css or src/App.css */
 
-*{
-    color: white;
+* {
+  color: white;
 }
 
 .logoInNav {
-   
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-    font-weight:600;
-    z-index: 1;
-    
-  }
-  
-  .circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 0.5px solid rgba(246, 246, 246, 0.8);
-    background-color: transparent;
-    position: absolute;
-    pointer-events: none;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    transition: left 0.3s ease, top 0.3s ease , background-color 1s ease,width 1s ease, height 1s ease;
-    
-  }
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  z-index: 1;
+}
 
-
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(246, 246, 246, 0.8);
+  background-color: transparent;
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  transition: left 0.3s ease, top 0.3s ease, background-color 1s ease,
+    width 1s ease, height 1s ease;
+}
 
 /* css for navbar///////////////////////////////////////////////////////////////////////// */
 
-
-
-.line{
+.line {
   height: 0.05%;
   width: 80%;
   background: #ffffff;
   align-items: center;
   margin: auto;
-  
+
   opacity: 30%;
-  
 }
 
-.out{
+.out {
   display: grid;
   place-items: center; /* Center both horizontally and vertically */
   background-color: #ffffff;
 }
 
-.line2{
+.line2 {
   height: 0.05%;
   width: 80%;
   background-color: white;
   opacity: 0.3;
 }
 
-
 /* CenteredLine.css */
 
-
 .out {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
-
 }
 
 .line {
   height: 1px;
-  width: 80%; 
-  background-color: rgb(255, 255, 255); 
-  opacity: 0.3; 
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.3;
 }
 
-.experience-body{
+.experience-body {
   height: 800px;
 }

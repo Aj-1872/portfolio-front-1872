@@ -11,7 +11,6 @@ const Skill = () => {
         const res = await fetch("http://localhost:3000/skill");
         const result = await res.json();
         setData(result);
-        
       } catch (error) {
         console.error("error fetching data: ", error);
       }
@@ -20,7 +19,10 @@ const Skill = () => {
   }, []);
 
   return (
-    <>
+    <div id="skill">
+      <div className="w-4/5 m-auto self-center pt-14 pb-8 font-serif italic text-3xl">
+        SKILLS
+      </div>
       <div className="outer">
         <div className="line"></div>
       </div>
@@ -69,7 +71,7 @@ const Skill = () => {
           className="w-4/5 m-auto self-center font-serif pl-14 "
           key={index}
         >
-          {res.framworks}
+          {res.frameworks}
         </div>
       ))}
 
@@ -78,7 +80,7 @@ const Skill = () => {
       </div>
 
       <div className="w-4/5 m-auto self-center p-14 pb-8 font-serif italic text-3xl">
-       Tools
+        Tools
       </div>
       {data.map((res, index) => (
         <div
@@ -89,7 +91,11 @@ const Skill = () => {
           {res.tools}
         </div>
       ))}
-    </>
+
+      <div className="outer mt-14">
+        <div className="line"></div>
+      </div>
+    </div>
   );
 };
 

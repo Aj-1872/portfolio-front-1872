@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Experience from "./Experience";
 import Skill from "./Skill";
+import Certificates from "./Certificates";
 
 const Profile = ({ circleRef }) => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -31,7 +32,7 @@ const Profile = ({ circleRef }) => {
         }}
       ></div>
 
-      <div  id="profile-body"  className="bg-black overflow-y-auto ">
+      <div id="profile-body" className="bg-black overflow-y-auto ">
         <div className="w-4/5 m-auto self-center p-14">
           <div className=" rounded-lg shadow-md">
             <div className="mb-4">Hi there :)</div>
@@ -57,9 +58,9 @@ const Profile = ({ circleRef }) => {
               Since I liked design, I taught myself Photoshop.
             </div>
             <div className="mb-4">
-              After leaving the apparel industry, I became a customer support and
-              web designer for a company that operated an e-commerce site, and
-              also studied coding on my own.
+              After leaving the apparel industry, I became a customer support
+              and web designer for a company that operated an e-commerce site,
+              and also studied coding on my own.
             </div>
 
             <div className="mb-4">
@@ -74,11 +75,9 @@ const Profile = ({ circleRef }) => {
           </div>
         </div>
 
-        {/* Skill and Experience components */}
         <Skill />
         <Experience />
-        
-       
+        <Certificates />
       </div>
     </>
   );
