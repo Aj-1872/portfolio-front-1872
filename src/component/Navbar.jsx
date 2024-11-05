@@ -10,8 +10,8 @@ const Navbar = ({ enterEffect, leaveEffect }) => {
   };
   return (
     <>
-      <div className="m-8">
-        <div className="flex items-center h-20">
+      <div className="m-8 top-0 sticky z-40">
+        <div className="flex items-center h-20 sticky">
           <div
             className="relative text-white text-4xl font-semibold cursor-pointer hover:text-black left-28"
             id="Logo"
@@ -21,9 +21,11 @@ const Navbar = ({ enterEffect, leaveEffect }) => {
             <Link to="/">Aj</Link>
           </div>
 
-          <div className="flex flex-row justify-end items-center cursor-pointer space-x-20 ml-auto text-xl">
+          <div className="flex flex-row justify-end items-center cursor-pointer space-x-20 ml-auto text-xl ">
             <div
-              className="text-white"
+              className="text-white hover:text-black"
+              onMouseEnter={enterEffect}
+              onMouseLeave={leaveEffect}
               onClick={() => scrollToSection("skill")}
             >
               Skills

@@ -4,7 +4,7 @@ import Home from "./component/Home";
 import Profile from "./component/Profile";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
-import Certificates from "./component/Certificates";
+import Projects from "./component/Projects";
 
 const App = () => {
   const bgColor = "black";
@@ -16,7 +16,7 @@ const App = () => {
       circleRef.current.style.backgroundColor = "white";
       circleRef.current.style.height = "100px";
       circleRef.current.style.width = "100px";
-      circleRef.current.style.zIndex = "-1";
+      circleRef.current.style.zIndex = "20";
     }
   };
 
@@ -32,7 +32,22 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="" element={<Home bgColor={bgColor} />} />
+        <Route
+          index
+          path=""
+          element={<Home bgColor={bgColor} circleRef={circleRef} />}
+        />
+        <Route
+          index
+          path="project"
+          element={
+            <Projects
+              enterEffect={enterEffect}
+              leaveEffect={leaveEffect}
+              circleRef={circleRef}
+            />
+          }
+        />
         <Route
           path="profile"
           element={

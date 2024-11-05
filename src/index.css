@@ -23,7 +23,7 @@
   background-color: transparent;
   position: absolute;
   pointer-events: none;
-  z-index: 10;
+  z-index: 50;
   transform: translate(-50%, -50%);
   transition: left 0.3s ease, top 0.3s ease, background-color 1s ease,
     width 1s ease, height 1s ease;
@@ -71,5 +71,9 @@
 }
 
 .experience-body {
+  height: 800px;
+}
+
+#education-body {
   height: 800px;
 }

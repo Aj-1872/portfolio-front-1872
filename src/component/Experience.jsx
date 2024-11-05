@@ -62,6 +62,9 @@ const Experience = () => {
       >
         EXPERIENCE
       </div>
+      <div className="outer mt-14 mb-10">
+        <div className="line"></div>
+      </div>
       <div className="bg-black flex flex-col justify-center items-center bg-gradient-to-b py-10 font-sans experience-body">
         <div className=" relative w-4/5 h-full rounded-md bg-gray-900 flex flex-row p-5">
           <div className="flex flex-col  h-full w-1/4 rounded-md mr-4  ">

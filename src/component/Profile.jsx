@@ -2,37 +2,14 @@ import React, { useState, useEffect } from "react";
 import Experience from "./Experience";
 import Skill from "./Skill";
 import Certificates from "./Certificates";
+import Education from "./Education";
+import Circle from "./Circle";
 
 const Profile = ({ circleRef }) => {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const { clientX: x, clientY: y } = e;
-      setMousePos({ x, y });
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
   return (
     <>
-      <div
-        ref={circleRef}
-        className="circle"
-        style={{
-          position: "absolute",
-          left: `${mousePos.x}px`,
-          top: `${mousePos.y}px`,
-          transform: "translate(-50%, -50%)",
-        }}
-      ></div>
-
-      <div id="profile-body" className="bg-black overflow-y-auto ">
+      <Circle ref={circleRef} />
+      <div id="profile-body" className="bg-black overflow-y-auto -z-40">
         <div className="w-4/5 m-auto self-center p-14">
           <div className=" rounded-lg shadow-md">
             <div className="mb-4">Hi there :)</div>
@@ -78,6 +55,7 @@ const Profile = ({ circleRef }) => {
         <Skill />
         <Experience />
         <Certificates />
+        <Education />
       </div>
     </>
   );
