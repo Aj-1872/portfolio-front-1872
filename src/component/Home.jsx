@@ -15,6 +15,7 @@ const Home = ({ bgColor, circleRef }) => {
     circleRef.current.style.backgroundColor = "transparent";
     circleRef.current.style.height = "50px";
     circleRef.current.style.width = "50px";
+    circleRef.current.style.zIndex = "10";
   };
 
   return (

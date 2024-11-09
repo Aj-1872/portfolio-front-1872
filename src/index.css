@@ -77,3 +77,13 @@
 #education-body {
   height: 800px;
 }
+
+#img-project {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust number of columns as needed */
+  gap: 16px; /* Space between grid items */
+  margin: 16px; /* Optional margin around the grid */
+}
