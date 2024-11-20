@@ -42,7 +42,10 @@ const Navbar = ({ enterEffect, leaveEffect }) => {
             >
               Certificates
             </div>
-            <div className="text-white">Education</div>
+            <div className="text-white"
+              onClick={() => scrollToSection("education")}
+            
+            >Education</div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const Experience = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const [dataById, setDataById] = useState([]);
+  const [dataById, setDataById] = useState({});
   const [id, setId] = useState("67196e8d8022eb3269029cbe");
 
   useEffect(() => {
@@ -71,7 +71,7 @@ const Experience = () => {
             {data.map((res, index) => (
               <div
                 onClick={() => handleIdChange(res._id)}
-                className=" m-1 p-2 h-1/5 w-full rounded-md shadow-2xl stransition-transform transform hover:scale-105 overflow-hidden"
+                className=" m-1 p-2 h-1/5 w-full rounded-md shadow-2xl transition-transform transform hover:scale-105 overflow-hidden"
                 key={index}
               >
                 <h1
@@ -88,7 +88,25 @@ const Experience = () => {
           </div>
 
           <div className="h-full w-full rounded-md bg-black p-4 text-white shadow-lg transition-transform transform hover:scale-105 ">
-            {dataById.description}
+            <ul className="space-y-4 mt-4">
+              {dataById.description && Array.isArray(dataById.description) ? (
+                dataById.description.map((desc, i) => (
+                  <li
+                    key={i}
+                    className="text-lg font-medium text-gray-300 leading-relaxed mb-4 hover:translate-x-2 transition-all duration-200 ease-in-out relative pl-6"
+                  >
+                    <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-xl text-white">
+                      &#8594;
+                    </span>
+                    {desc}
+                  </li>
+                ))
+              ) : (
+                <li className="text-lg font-medium text-gray-400">
+                  No description available
+                </li>
+              )}
+            </ul>
           </div>
         </div>
       </div>

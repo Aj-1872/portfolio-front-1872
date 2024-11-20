@@ -17,37 +17,43 @@ const Profile = ({ circleRef }) => {
               I’m a software developer and network engineer based in Canada.
             </div>
             <div className="mb-4">
-              I’ve been working in the web industry since 2022, and I’m always
-              inspired by the great designs of websites created by creators from
-              all over the world every day.
-            </div>
+              {" "}
+              I’ve been working in the tech industry for two years while being a
+              student at Sheridan College. My experience includes co-op work
+              that has given me hands-on skills in web development and software
+              projects.{" "}
+            </div>{" "}
             <div className="mb-4">
-              created by creators from all over the world every day. My current
-              goal is to win an award for my website.
-            </div>
-
+              {" "}
+              I am inspired by the rapidly evolving tech industry. With a
+              creative mindset and a passion for drawing and crafts, I chose
+              this field to blend my creativity with technology.{" "}
+            </div>{" "}
             <div className="mb-4">
-              My recent interests are Jamstack and Shopify. I used to work as a
-              salesperson in the apparel industry because I love fashion.
-            </div>
-
+              {" "}
+              My current professional goal is to become a software developer at
+              an innovative startup where I can contribute to growth and gain
+              deeper experience.{" "}
+            </div>{" "}
             <div className="mb-4">
-              Since I liked design, I taught myself Photoshop.
-            </div>
+              {" "}
+              Recently, I’ve been dedicating my time to building projects,
+              learning new technologies, sketching, and maintaining a balanced
+              lifestyle through gym workouts and self-cooking.{" "}
+            </div>{" "}
             <div className="mb-4">
-              After leaving the apparel industry, I became a customer support
-              and web designer for a company that operated an e-commerce site,
-              and also studied coding on my own.
-            </div>
-
+              {" "}
+              I’ve developed a variety of skills, including effective
+              communication and logical problem-solving through brainstorming.
+              Learning from my mistakes has been essential, and I've also
+              cultivated self-control through yoga and intermittent fasting.{" "}
+            </div>{" "}
             <div className="mb-4">
-              After that, I became an exclusive web designer and front-end
-              engineer for a fashion trading company.
-            </div>
-
-            <div className="mb-4">
-              Currently, I am working as a freelancer specializing in web
-              production.
+              {" "}
+              My journey started as a student at Sheridan College, where I was
+              introduced to the fundamentals of web development. From there, I
+              continued to learn through online courses and YouTube tutorials,
+              expanding my technical expertise.{" "}
             </div>
           </div>
         </div>

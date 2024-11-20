@@ -5,6 +5,7 @@ import Profile from "./component/Profile";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Projects from "./component/Projects";
+import Resume from "./component/Resume";
 
 const App = () => {
   const bgColor = "black";
@@ -48,6 +49,19 @@ const App = () => {
             />
           }
         />
+
+        <Route
+          index
+          path="resume"
+          element={
+            <Resume
+              enterEffect={enterEffect}
+              leaveEffect={leaveEffect}
+              circleRef={circleRef}
+            />
+          }
+        />
+
         <Route
           path="profile"
           element={

@@ -50,6 +50,14 @@ const Home = ({ bgColor, circleRef }) => {
           <Link to="/project">PROJECT</Link>
         </div>
 
+        <div
+          className="resume"
+          onMouseEnter={enterEffect}
+          onMouseLeave={leaveEffect}
+        >
+          <Link to="/resume">RESUME</Link>
+        </div>
+
         <div className="name">AJAY ODEDARA</div>
         <div className="pass">SOFTWARE DEVELOPER AND NETWORK ENGINEERING</div>
         <div className="canada">(BASED IN CANADA)</div>
